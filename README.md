@@ -1,73 +1,76 @@
-🎨 StyleMorph
-StyleMorph is an AI-powered styling playground combining a Next.js frontend with a Python backend and buttressed by the Gemini 2.5 Flash AI agent for real-time creativity.
+# StyleMorph
 
-🚀 Features
-Gemini 2.5 Flash: fast, efficient, and built for “thinking” — powering StyleMorph’s design logic and style generation 
-medium.com
-+5
-cloud.google.com
-+5
-news.ycombinator.com
-+5
-.
+StyleMorph is an AI-powered creative tool that allows users to explore and manipulate design styles using real-time intelligence. It integrates a Next.js frontend with a Python backend and leverages the Gemini 2.5 Flash model as the core AI engine.
 
-Next.js frontend: sleek, reactive UI for interacting with AI.
+## Features
 
-Python backend: handles AI orchestration, API calls, and data flow.
+- Gemini 2.5 Flash integration for fast, context-aware responses
+- AI-driven style transformations and idea generation
+- Next.js frontend for responsive user interaction
+- Python backend for handling AI communication and data flow
+- Modular and scalable architecture
 
-🧩 Architecture
-markdown
-Copy
-Edit
-Gemini 2.5 Flash agent
-        ↕
-Python backend
-        ↕
-Next.js frontend
-AI messages flow to the backend, which communicates with Gemini and streams responses back to the frontend.
+## Tech Stack
 
-⚙️ Setup Instructions
-Clone the repo:
+- Gemini 2.5 Flash (Google Vertex AI)
+- Python (FastAPI or Flask)
+- Next.js (React)
+
+## Project Structure
+
+Gemini 2.5 Flash (Google Vertex AI)
+↕
+Python Backend (API handler)
+↕
+Next.js Frontend (UI/UX)
 
 bash
 Copy
 Edit
-git clone https://github.com/Vahiyaatproduct9/stylemorph.git
-cd stylemorph
-Install backend deps:
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vahiyaatproduct9/stylemorph.git
+   cd stylemorph
+Backend setup:
 
 bash
 Copy
 Edit
-cd backend && pip install -r requirements.txt
-Install frontend deps:
+cd backend
+pip install -r requirements.txt
+Frontend setup:
 
 bash
 Copy
 Edit
-cd ../frontend && npm install
-Add your Gemini API key and other env variables (.env.local).
+cd ../frontend
+npm install
+Configure environment variables:
 
-Run backend (e.g. FastAPI or Flask):
+Create a .env.local file in the frontend directory.
+
+Add your Gemini API key and other necessary configuration.
+
+Start the backend server:
 
 bash
 Copy
 Edit
-uvicorn api:app --reload
-Run frontend:
+uvicorn app:app --reload
+Start the frontend development server:
 
 bash
 Copy
 Edit
 npm run dev
-Open localhost:3000, play with StyleMorph.
+Open the app:
+Visit http://localhost:3000 in your browser.
 
-🧠 Why It’s Cool
-Gemini 2.5 Flash is optimized for low-latency and better reasoning in AI interactions—ideal for live styling experiences 
-cloud.google.com
-.
+About Gemini 2.5 Flash
+StyleMorph uses Gemini 2.5 Flash from Google Vertex AI. This model is optimized for high-speed inference and efficient reasoning, making it suitable for interactive, real-time applications such as creative design and style manipulation.
 
-Modular design makes it easy to swap AI models, scale up, or integrate creative tools.
-
-🛠 Want to contribute?
-Open issues or submit PRs—StyleMorph is all about iteration and creative hacking. Any suggestions or style ideas welcome!
+Contributing
+Contributions are welcome. If you have suggestions for improvements or additional features, feel free to open an issue or submit a pull request.
