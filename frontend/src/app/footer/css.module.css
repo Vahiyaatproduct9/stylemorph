@@ -1,0 +1,28 @@
+.container {
+    margin: 120px 0 0 0;
+    background: rgb();
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: content-box;
+
+    .feedback {
+        font-family: Geist, Anciar Sans, Open Sans, Calibri;
+        border-width: 1px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: white;
+        padding: 10px 20px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.1s;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}

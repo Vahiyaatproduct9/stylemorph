@@ -1,0 +1,263 @@
+div.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari */
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px 10px 0 10px;
+        height: fit-content;
+        margin-top: 100px;
+
+        .header {
+            >span {
+                padding-left: 30px;
+                font-size: 20px;
+                font-style: italic;
+            }
+
+            h1 {
+                display: flex;
+                flex-wrap: wrap;
+                line-height: 16rem;
+
+                @media (max-width: 1200px) {
+                    line-height: 120px;
+                }
+
+                @media (max-width: 768px) {
+                    line-height: 50px;
+                }
+
+                span.Style {
+                    letter-spacing: 5px;
+                    font-size: 200px;
+                    font-family: Ballet;
+
+                    @media (max-width: 1200px) {
+                        font-size: 104px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 52px;
+                    }
+                }
+
+                span.Morph {
+                    font-size: 200px;
+                    font-family: Bitcount, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-style: italic;
+                    color: white;
+                    text-shadow: 1px 1px black;
+
+                    @media (max-width: 1200px) {
+                        font-size: 104px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 52px;
+                    }
+                }
+            }
+        }
+
+        .body {
+            p {
+                max-width: 900px;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 20px;
+                font-family: Geist;
+            }
+        }
+
+        .foot {
+            width: 100%;
+            max-width: 900px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+            .StartButton {
+                box-shadow: 0 2px 26px 0 rgba(250, 218, 122, 0.3);
+                display: flex;
+                border-radius: 20px;
+                border-width: 0 0 2px 0;
+                border-style: solid;
+                padding: 10px 30px 10px 10px;
+                font-size: 20px;
+                font-weight: 600;
+                gap: 10px;
+                align-items: center;
+                justify-content: space-between;
+                transition: all 0.1s;
+
+                &:hover {
+                    box-shadow: 0 6px 30px 0 rgba(250, 218, 122, 0.3);
+                    border-width: 0 0 6px 0;
+                    transform: translateY(-4px);
+                }
+
+                &:active {
+                    box-shadow: 0;
+                    border-width: 0;
+                    transform: translateY(2px);
+                }
+            }
+
+            .inputGroup {
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                width: 100%;
+                max-width: 600px;
+
+
+                div.imageDiv {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 100%;
+
+                    img {
+                        max-width: 600px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        border-radius: 20px;
+
+                    }
+                }
+
+                div.chooseImageDiv {
+                    width: 100%;
+                    min-height: 300px;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    border-radius: 20px;
+                    border-style: dashed;
+                    border-color: #578FCA;
+                    border-width: 4px;
+
+                    button {
+                        display: flex;
+                        border-radius: 7px;
+                        padding: 10px 20px;
+                        font-size: 20px;
+                        font-weight: 300;
+                        gap: 10px;
+                        align-items: center;
+                        justify-content: space-between;
+                        transition: all 0.1s;
+                        cursor: pointer;
+                        border: 1px white solid;
+
+                        &:hover {
+                            transform: scale(1.02);
+                        }
+
+                        &:active {
+                            transform: scale(0.98);
+                        }
+                    }
+                }
+
+                form {
+                    width: 100%;
+                    display: flex;
+                    gap: 10px;
+
+                    input {
+                        text-align: center;
+                        flex-grow: 1;
+                        padding: 10px 20px;
+                        border-radius: 7px;
+                        border-width: 0;
+                        outline-color: royalblue;
+                        font-family: Oregano, Geist, Calibri, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-weight: 700;
+                        font-size: 21px;
+
+                    }
+
+                    button {
+                        display: flex;
+                        border-radius: 7px;
+                        padding: 10px 20px;
+                        font-size: 20px;
+                        font-weight: 300;
+                        gap: 10px;
+                        align-items: center;
+                        justify-content: space-between;
+                        transition: all 0.1s;
+                        cursor: pointer;
+                        border: 1px white solid;
+
+                        &:hover {
+                            transform: scale(1.02);
+                        }
+
+                        &:active {
+                            transform: scale(0.98);
+                        }
+                    }
+                }
+
+                .OnceMoreContainer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+
+                    button {
+                        width: fit-content;
+                        display: flex;
+                        border-radius: 7px;
+                        padding: 10px 20px;
+                        font-size: 20px;
+                        font-weight: 300;
+                        gap: 10px;
+                        align-items: center;
+                        justify-content: space-between;
+                        transition: all 0.1s;
+                        cursor: pointer;
+                        border: 1px white solid;
+
+                        &:hover {
+                            transform: scale(1.02);
+                        }
+
+                        &:active {
+                            transform: scale(0.98);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

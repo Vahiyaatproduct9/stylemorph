@@ -1,0 +1,31 @@
+.container {
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .box {
+        cursor: pointer;
+        height: 2rem;
+        padding: 3px;
+        width: 3.5rem;
+        background: lightblue;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+
+        .switch {
+            height: 2rem;
+            width: 2rem;
+            border-radius: 100%;
+            background: grey;
+        }
+    }
+
+    span {
+        text-align: center;
+        width: 100%;
+    }
+}

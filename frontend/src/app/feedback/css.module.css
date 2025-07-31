@@ -1,0 +1,87 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+
+    .boxContainer {
+        max-width: 600px;
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        box-sizing: border-box;
+        width: calc(100% - 20px);
+        border-radius: 20px;
+        margin: 10px;
+        background: rgba(100, 100, 100, 0.6);
+        padding: 10px;
+
+        form {
+            align-items: center;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            label {
+                width: 100%;
+                text-align: left;
+            }
+
+            input,
+            textarea {
+                box-sizing: border-box;
+                border-radius: 10px;
+                padding: 10px;
+                border: 1px white solid;
+                outline: none;
+                font-size: 1rem;
+                resize: none;
+                width: 100%;
+                font-family: Geist, Open sans, Ancizar Sans;
+
+                &:focus {
+                    outline-width: 2px;
+                    outline-color: royalblue;
+                    outline-style: dashed;
+                }
+            }
+
+            textarea {
+
+                height: 120px;
+            }
+
+            button {
+                font-family: Geist, Anciar Sans, Open Sans, Calibri;
+                border-width: 1px;
+                border-radius: 10px;
+                border-style: solid;
+                border-color: white;
+                padding: 10px 30px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.1s;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+
+                &:hover {
+                    transform: scale(1.02);
+                }
+
+                &:active {
+                    transform: scale(0.98);
+                }
+            }
+        }
+    }
+}
