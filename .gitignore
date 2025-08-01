@@ -1,7 +1,7 @@
 # Ignore env files anywhere
 .env*
 **/.env*
-
+/backend/.env*
 # Ignore node_modules anywhere
 node_modules/
 **/node_modules/
