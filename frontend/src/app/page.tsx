@@ -3,7 +3,7 @@ import React from 'react'
 import Main from '@/app/main/main'
 import { useState, useEffect } from 'react'
 import Toggle from './themeToggle/toggle'
-import Footer from './footer/footer'
+// import Footer from './footer/footer'
 function Page() {
   const [theme, setTheme] = useState<'dark' | 'light'>('light')
   useEffect(() => {
@@ -14,6 +14,7 @@ function Page() {
     <>
       <Main theme={theme} />
       <Toggle theme={theme} setTheme={setTheme} />
+      {/* <Footer theme={theme} /> */}
     </>
   )
 }

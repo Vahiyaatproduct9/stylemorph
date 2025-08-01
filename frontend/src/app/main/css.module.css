@@ -27,7 +27,7 @@ div.main {
         box-sizing: border-box;
         padding: 10px 10px 0 10px;
         height: fit-content;
-        margin-top: 100px;
+        margin-top: 50px;
 
         .header {
             >span {
