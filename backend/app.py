@@ -18,7 +18,7 @@ uvicorn.run(app, host="0.0.0.0", port=port)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins = ["http://localhost:3000", "https://stylemorph.vercel.app"], # Change this to your liking
+    allow_origins = ["*","http://localhost:3000", "https://stylemorph.vercel.app"], # Change this to your liking
     allow_methods = ["*"],
     allow_headers = ["*"]
 )
