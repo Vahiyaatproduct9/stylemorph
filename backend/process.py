@@ -1,3 +1,4 @@
+# import google.generativeai as genai
 from google import genai
 from google.genai import types
 from PIL import Image
@@ -29,7 +30,7 @@ def gemini_process(image_file, text):
       prompt_parts = os.environ.get('GEMINI_STYLE_TRANSFER_PROMPT_ONE'), text, os.environ.get('GEMINI_STYLE_TRANSFER_PROMPT_TWO'), text, os.environ.get('GEMINI_STYLE_TRANSFER_PROMPT_THREE', '')
       response = client.models.generate_content(
           model="gemini-2.0-flash-preview-image-generation",
-          contents=[prompt_parts, image_file],
+          contents=[str(prompt_parts), image_file],
           config=types.GenerateContentConfig(
             response_modalities=['TEXT','IMAGE']
           )
