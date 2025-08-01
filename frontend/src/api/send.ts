@@ -21,7 +21,7 @@ export default async function send(image: File | null, object: string) {
     formData.append('image', image);
     formData.append('object', object);
 
-    const res = await fetch('https://stylemorph.railway.internal', {
+    const res = await fetch('https://stylemorph-production.up.railway.app', {
         method: 'POST',
         body: formData
     });
