@@ -4,3 +4,4 @@ python-dotenv
 Pillow
 google-generativeai
 requests
+uvicorn
