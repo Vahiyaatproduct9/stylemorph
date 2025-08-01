@@ -1,8 +1,6 @@
-google
-PIL
-os
-dotenv
-base64
 fastapi
-io
-process
+uvicorn
+python-dotenv
+Pillow
+google-generativeai
+requests
