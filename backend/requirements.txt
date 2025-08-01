@@ -6,3 +6,5 @@ google-generativeai
 requests
 uvicorn
 python-multipart
+google
+google-genai
