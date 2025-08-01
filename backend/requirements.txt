@@ -1,0 +1,8 @@
+google
+PIL
+os
+dotenv
+base64
+fastapi
+io
+process
